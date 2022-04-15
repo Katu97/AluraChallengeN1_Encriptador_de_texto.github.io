@@ -1,0 +1,228 @@
+*{
+    background-color: #E5E5E5;
+    margin: 0;
+}
+
+/* Vector */
+#logo{
+    position: absolute;
+    left: 84px;
+    top: 40px;
+    bottom: 0%;
+    color: #0A3871;
+    height: 48px;
+    width: 31.09px;
+}
+
+.text{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+}
+
+.text input{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+}
+
+/* Rectangle 1 */
+.mensaje{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+    border-radius: 32px;
+}
+
+.mensaje div{
+    position: relative;
+    width: 336px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    user-select: none;
+}
+
+.munheco{
+    height: 304px;
+}
+
+.mensaje-encontrado{
+    height: 58px;
+    margin: 16px 0px;
+}
+
+.mensaje-encontrado p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #343A40;
+    background-color: #FFFFFF;
+    height: 100%;
+    margin: 0;
+}
+
+.mensaje-aviso{
+    height: 48px;
+    margin: 16px 0px;  
+     align-items: center;
+}
+
+.mensaje-aviso p{
+    margin: 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%; /* or 24px */
+    text-align: center; /* Gray/gray-400 */
+    color: #495057;
+    background-color: #FFFFFF;
+}
+
+/* MUÑECO */
+.munheco img{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    background-color: #FFFFFF;
+}
+
+/* AVISO Y BOTONES */
+
+.frame13{
+    position: relative;
+    top: 851px;
+    left: 264px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.aviso{
+    display: flex;
+    margin: 5px;
+    height: 18px;
+    width: 250px;
+}
+
+#vectoraviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertencia{
+    margin-left: 5px;
+    height: 100%;
+    width: 210px;
+}
+
+.advertencia p{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%; /* identical to box height, or 18px */
+    color: #495057;
+    opacity: 0.8;
+}
+
+#boton1{
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #0A3871;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+#boton2{
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin-left: 24px;
+}
+
+footer{
+    position: absolute;
+    top: 1000px;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d8d8d8;
+    
+}
+
+#milogo img{
+    background-color: #d8d8d8;
+    width: 90px;
+}
+
+.nombre{
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+}
+
+.nombre p{
+    background-color: #d8d8d8;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%; /* identical to box height, or 18px */
+    color: #495057;
+    opacity: 0.5;
+
+}
+
+#milogo, .redes, .redes a{
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+}
+
+.redes a img{
+    width: 20px;
+    background-color: #d8d8d8;
+    margin-left: 10px;
+}
