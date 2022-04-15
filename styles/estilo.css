@@ -22,7 +22,7 @@
     top: 168px;
 }
 
-.text input{
+.text textarea{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -32,9 +32,13 @@
     border: none;
     appearance: none;
     outline: none;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
 }
 
-.text input:focus{
+.text textarea:focus{
     outline: none;
 }
 
