@@ -34,6 +34,10 @@
     outline: none;
 }
 
+.text input:focus{
+    outline: none;
+}
+
 /* Rectangle 1 */
 .mensaje{
     position: absolute;
