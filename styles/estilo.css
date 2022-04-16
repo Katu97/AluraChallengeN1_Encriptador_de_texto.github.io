@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    width: 1440px;
+    height: 1074px;
+}
+
 /* Vector */
 #logo{
     position: absolute;
@@ -195,8 +200,8 @@
 
 footer{
     position: absolute;
-    top: 1000px;
-    width: 100vw;
+    top: 1024px;
+    width: 1440px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -242,6 +247,11 @@ footer{
 
 /* RESPONSIVE TABLET */
 @media screen and (max-width: 768px) {
+
+    body{
+        width: 768px;
+        height: 1224px;
+    }
 
     #logo{
         left: 6%;
@@ -306,13 +316,18 @@ footer{
 
     footer{
         top: 1174px;
-        width: 100vw;
+        width: 768px;
         height: 50px;        
     }
 }
 
 /* RESPONSIVE CELULAR */
 @media screen and (max-width: 375px) {
+
+    body{
+        width: 375px;
+        height: 983px;
+    }
 
     /* Vector */
     #logo{
@@ -393,16 +408,11 @@ footer{
     /* FOOTER */
 
     footer{
-        top: 933pxpx;
-        width: 100vw;
-        margin: 10px 0;
+        top: 933px;
+        width: 375px;
+        padding: 0 10px;
         
     }
-
-    /* #milogo img{
-        background-color: #d8d8d8;
-        width: 90px;
-    } */
 
     .redes a img{
         width: 15px;
