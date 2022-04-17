@@ -13,7 +13,7 @@
     <main>
         <img id="logo" src="assets/Vectoraluralogo.png" alt="Loro Alura">
         <div class="text">
-            <textarea type="text" placeholder="Ingrese el texto aquí..." autofocus></textarea>
+            <textarea id="textarea" type="text" placeholder="Ingrese el texto aquí..." autofocus></textarea>
         </div>
         <div class="mensaje">
             <div class="munheco">
@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="botones">
-                <button id="boton1">Encriptar</button>
-                <button id="boton2">Desencriptar</button>
+                <button id="boton1" onclick="encriptarMensaje()">Encriptar</button>
+                <button id="boton2" onclick="desencriptarMensaje()">Desencriptar</button>
             </div>
         </div>
     </main>

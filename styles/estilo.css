@@ -193,7 +193,13 @@ body{
 }
 
 #boton1:hover, #boton2:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#boton1:active, #boton2:active{
+    transform: none;
+    box-shadow: none;
 }
 
 /* FOOTER */
