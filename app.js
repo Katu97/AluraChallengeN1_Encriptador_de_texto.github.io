@@ -11,30 +11,38 @@ function mostrarmensaje(mensaje){
 
 function encriptarMensaje(){
     let texto = document.getElementById("textarea").value.toLowerCase();
-        
-    let textoEncriptado = texto.replace(/e/igm, "enter");
-    textoEncriptado = textoEncriptado.replace(/i/igm, "imes");
-    textoEncriptado = textoEncriptado.replace(/a/igm, "ai");
-    textoEncriptado = textoEncriptado.replace(/o/igm, "ober");
-    textoEncriptado = textoEncriptado.replace(/u/igm, "ufat");
+    
+    if(texto != ""){
+        let textoEncriptado = texto.replace(/e/igm, "enter");
+        textoEncriptado = textoEncriptado.replace(/i/igm, "imes");
+        textoEncriptado = textoEncriptado.replace(/a/igm, "ai");
+        textoEncriptado = textoEncriptado.replace(/o/igm, "ober");
+        textoEncriptado = textoEncriptado.replace(/u/igm, "ufat");
 
-    mostrarmensaje(textoEncriptado);
-    document.getElementById("textarea").value = "";
-    document.getElementById("textarea").focus();
+        mostrarmensaje(textoEncriptado);
+        document.getElementById("textarea").value = "";
+    } else {
+        alert("No se ha ingresado un mensaje");
+    }
+  
 }
 
 function desencriptarMensaje(){
     let texto = document.getElementById("textarea").value.toLowerCase();
 
-    let textodesencriptado = texto.replace(/ai/igm, "a");
-    textodesencriptado = textodesencriptado.replace(/enter/igm, "e");
-    textodesencriptado = textodesencriptado.replace(/imes/igm, "i");
-    textodesencriptado = textodesencriptado.replace(/ober/igm, "o");
-    textodesencriptado = textodesencriptado.replace(/ufat/igm, "u");
+    if (texto != ""){
+        let textodesencriptado = texto.replace(/ai/igm, "a");
+        textodesencriptado = textodesencriptado.replace(/enter/igm, "e");
+        textodesencriptado = textodesencriptado.replace(/imes/igm, "i");
+        textodesencriptado = textodesencriptado.replace(/ober/igm, "o");
+        textodesencriptado = textodesencriptado.replace(/ufat/igm, "u");
 
-    mostrarmensaje(textodesencriptado);
-    document.getElementById("textarea").value = "";
-    document.getElementById("textarea").focus();
+        mostrarmensaje(textodesencriptado);
+        document.getElementById("textarea").value = "";
+    } else {
+        alert("No se ha ingresado un mensaje");
+    }
+    
 }   
 
 function copiarMensaje(){
