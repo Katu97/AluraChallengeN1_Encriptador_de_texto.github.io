@@ -418,6 +418,10 @@ footer{
         width: 332px;
     }
 
+    .copiar{
+        margin: 0 0 10px 150px !important;
+    }
+
     footer{
         top: 1174px;
         width: 768px;
@@ -509,6 +513,12 @@ footer{
         margin: 16px 0 0 0;
     }
 
+    .copiar{
+        display: none;
+        margin: 0 0 10px 0 !important;
+        width: 100% !important;
+    }
+
     /* FOOTER */
 
     footer{
@@ -526,4 +536,5 @@ footer{
         margin-left: 10px;
         text-align: center;
     }
+
 }
