@@ -1,7 +1,6 @@
 // Funcion encriptar
 function encriptarMensaje(){
     let texto = document.getElementById("textarea").value; // .value.toLowerCase(); hacer las letras minusculas
-    
     mensajeCorrecto(texto);
 
     if(texto == ""){
@@ -50,14 +49,14 @@ function desencriptarMensaje(){
 
 //Funcion que evalua que se cumplan las condiciones de escritura
 function mensajeCorrecto(mensaje){
-    let mensajeLetras = Array.from(mensaje);
-    for (let i = 0; i < mensajeLetras.length; i++){
-        if((mensajeLetras[i].charCodeAt(0) >= 97 && mensajeLetras[i].charCodeAt(0) <= 122) || (mensajeLetras[i].charCodeAt(0) == 32) || (mensajeLetras[i].charCodeAt(0) == 164)){
+    for (let i = 0; i < mensaje.length; i++){
+        //console.log(mensaje.charCodeAt(i)); //muestra codigo ASCII de cada signo
+        if((mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122) || (mensaje.charCodeAt(i) == 32) || (mensaje.charCodeAt(i) == 241) || (mensaje.charCodeAt(i) == 10)){
             cantLetras = cantLetras + 1;
         }
     }
 
-    if(cantLetras == mensajeLetras.length){
+    if(cantLetras == mensaje.length){
         bandera = true;
     }
 }
@@ -81,7 +80,7 @@ function copiarMensaje(){
 }
 
 function nohaymensaje(){
-    document.getElementById("borrar1").style.display = "initial";
+    document.getElementById("borrar1").style.display = "show";
     document.getElementById("borrar2").style.display = "initial";
     document.getElementById("borrar3").style.display = "initial";
     document.getElementById("aparecer").style.display = "none";

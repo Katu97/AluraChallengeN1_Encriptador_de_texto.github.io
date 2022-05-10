@@ -462,15 +462,23 @@ footer{
     /* Rectangle 1 */
     .mensaje{
         width: 327px;
-        height: 186px;
+        height: 250px;
         left: 24px;
         top: 650px;
+    }
+
+    .mensaje-encriptado{
+        height: 70%;
+    }
+    
+    .mensaje-encriptado p{
+        font-size: 100%;
     }
 
     .mensaje div{
         width: 263px;
     }
-
+    
     .mensaje-encontrado{
         height: 58px;
         margin: 0px;
