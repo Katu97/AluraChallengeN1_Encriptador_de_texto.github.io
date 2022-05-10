@@ -5,7 +5,7 @@
 
 body{
     width: 1440px;
-    height: 1074px;
+    height: 1024px;
 }
 
 /* Vector */
@@ -69,6 +69,22 @@ body{
     background-color: #FFFFFF;
     justify-content: center;
     user-select: none;
+}
+
+.mensaje-encriptado{
+    display: none;
+    height: 781px;
+    user-select: auto !important;
+}
+
+.mensaje-encriptado p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    background-color: #FFFFFF;
 }
 
 .munheco{
@@ -146,6 +162,7 @@ body{
     margin-left: 5px;
     height: 100%;
     width: 210px;
+    user-select: none;
 }
 
 .advertencia p{
@@ -159,9 +176,10 @@ body{
     line-height: 150%; /* identical to box height, or 18px */
     color: #495057;
     opacity: 0.8;
+    user-select: none;
 }
 
-#boton1{
+.boton1{
     position: static;
     width: 328px;
     height: 67px;
@@ -177,9 +195,10 @@ body{
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    user-select: none;
 }
 
-#boton2{
+.boton2{
     position: static;
     width: 328px;
     height: 67px;
@@ -190,16 +209,22 @@ body{
     box-sizing: border-box;
     border-radius: 24px;
     margin-left: 24px;
+    user-select: none;
 }
 
-#boton1:hover, #boton2:hover{
+.boton1:hover, .boton2:hover{
     transform: scale(1.05);
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-#boton1:active, #boton2:active{
+.boton1:active, .boton2:active{
     transform: none;
     box-shadow: none;
+}
+
+.copiar{
+    display: none;
+    margin: 0 !important;
 }
 
 /* FOOTER */
@@ -213,6 +238,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     background-color: #d8d8d8;
+    user-select: none;
     
 }
 
@@ -236,6 +262,7 @@ footer{
     line-height: 150%; /* identical to box height, or 18px */
     color: #495057;
     opacity: 0.5;
+    user-select: none;
 
 }
 
@@ -249,6 +276,77 @@ footer{
     width: 20px;
     background-color: #d8d8d8;
     margin-left: 10px;
+}
+
+.redes a img:hover{
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE COMPU MIA */
+@media screen and (max-width: 1366px) {
+    body{
+        height: 617px
+    }
+    
+    /* Vector */
+    #logo{
+        left: 44px;
+    }
+    
+    .text{
+        left: 120px;
+        top: 120px;
+    }
+    
+    /* Rectangle 1 */
+    .mensaje{
+        width: 380px;
+        height: 537px;
+        left: 940px;
+        top: 30px;
+    }
+    
+    .mensaje-encriptado{
+        height: 400px;
+    }
+    
+    .munheco{
+        height: 304px;
+    }
+    
+    /* MUÑECO */
+    .munheco img{
+        top: 10px;
+        width: 300px;
+        height: 268px;
+    }
+    
+    /* AVISO Y BOTONES */
+    
+    .frame13{
+        position: relative;
+        top: 450px;
+        left: 150px;
+    }
+    
+    /* FOOTER */
+    
+    footer{
+        position: absolute;
+        top: 617px;
+        width: 1366px;
+    }
+    
+    .nombre p{
+        font-size: 12px;
+    }
+    
+    #milogo, .redes, .redes a{
+        background-color: #d8d8d8;
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 /* RESPONSIVE TABLET */

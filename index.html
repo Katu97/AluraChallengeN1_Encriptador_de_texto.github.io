@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/sofia.png">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/estilo.css">
-    <script src="app.js"></script>
     <title>Encriptador/Desencriptador de texto - AluraChallenges</title>
 </head>
 <body>
@@ -16,13 +16,19 @@
             <textarea id="textarea" type="text" placeholder="Ingrese el texto aquí..." autofocus></textarea>
         </div>
         <div class="mensaje">
-            <div class="munheco">
+            <div id="aparecer" class="mensaje-encriptado">
+                <p id="mensajeprocesado"></p>
+            </div>
+            <div>
+                <button id="botoncopiar" class="copiar boton2">Copiar</button>
+            </div>
+            <div id="borrar1" class="munheco">
                 <img src="assets/Muñecomuñeco.png" alt="Muñeco con lupa">
             </div>
-            <div class="mensaje-encontrado">
+            <div id="borrar2" class="mensaje-encontrado">
                 <p>Ningún mensaje fue encontrontrado</p>
             </div>
-            <div class="mensaje-aviso">
+            <div id="borrar3" class="mensaje-aviso">
                 <p>Ingresar el texto que desea encriptar o desencriptar</p>
             </div>
         </div>
@@ -36,8 +42,8 @@
                 </div>
             </div>
             <div class="botones">
-                <button id="boton1" onclick="encriptarMensaje()">Encriptar</button>
-                <button id="boton2" onclick="desencriptarMensaje()">Desencriptar</button>
+                <button id="encriptar" class="boton1">Encriptar</button>
+                <button id="desencriptar" class="boton2">Desencriptar</button>
             </div>
         </div>
     </main>
@@ -55,5 +61,6 @@
             <a target="_blank" href="https://twitter.com/SofiaKatuchin"><img src="assets/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
