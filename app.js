@@ -8,7 +8,7 @@ function encriptarMensaje(){
     if(texto == ""){
         nohaymensaje();
     } else if(bandera == false){
-        alert("Se debe ingresar texto en minúscula y sin acentos");
+        alert("Se debe ingresar solo texto en minúscula y sin acentos");
         cantLetras = 0;
     } else {
         let textoEncriptado = texto.replace(/e/igm, "enter");
