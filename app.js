@@ -1,3 +1,5 @@
+// FUNCIONES
+
 // Funcion encriptar
 function encriptarMensaje(){
     let texto = document.getElementById("textarea").value; // .value.toLowerCase(); hacer las letras minusculas
@@ -23,6 +25,7 @@ function encriptarMensaje(){
   
 }
 
+// Funcion desencriptar
 function desencriptarMensaje(){
     let texto = document.getElementById("textarea").value;
     mensajeCorrecto(texto);
@@ -73,12 +76,14 @@ function mostrarmensaje(mensaje){
     document.getElementById("mensajeprocesado").innerHTML = mensaje;
 }
 
+//Funcion copiar
 function copiarMensaje(){
     let mensajeProcesado = document.getElementById("mensajeprocesado").innerHTML;
     navigator.clipboard.writeText(mensajeProcesado);
     alert("Mensaje copiado!");
 }
 
+// Funcion de mensaje no encontrado
 function nohaymensaje(){
     document.getElementById("borrar1").style.display = "show";
     document.getElementById("borrar2").style.display = "initial";
@@ -87,6 +92,9 @@ function nohaymensaje(){
     document.getElementById("botoncopiar").style.display = "none";
 }
 
+// FIN FUNCIONES
+
+// Declaraciones
 let cantLetras = 0;
 let bandera = false;
 let texto = document.getElementById("textarea").value.toLowerCase();
@@ -95,6 +103,7 @@ let botonEncriptar = document.getElementById("encriptar");
 let botonDesencriptar = document.getElementById("desencriptar");
 let botonCopiar = document.getElementById("botoncopiar");
 
+// Botones
 botonEncriptar.onclick = encriptarMensaje;
 botonDesencriptar.onclick = desencriptarMensaje;
 botonCopiar.onclick = copiarMensaje;
