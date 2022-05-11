@@ -33,7 +33,7 @@ function desencriptarMensaje(){
     if(texto == ""){
         nohaymensaje();
     } else if(bandera == false){
-        alert("Se debe ingresar texto en minúscula y sin acentos");
+        alert("Se debe ingresar solo texto en minúscula y sin acentos");
         cantLetras = 0;
     } else {
         let textodesencriptado = texto.replace(/ai/igm, "a");
@@ -53,7 +53,7 @@ function desencriptarMensaje(){
 //Funcion que evalua que se cumplan las condiciones de escritura
 function mensajeCorrecto(mensaje){
     for (let i = 0; i < mensaje.length; i++){
-        //console.log(mensaje.charCodeAt(i)); //muestra codigo ASCII de cada signo
+        console.log(mensaje.charCodeAt(i)); //muestra codigo ASCII de cada signo
         if((mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122) || (mensaje.charCodeAt(i) == 32) || (mensaje.charCodeAt(i) == 241) || (mensaje.charCodeAt(i) == 10)){
             cantLetras = cantLetras + 1;
         }
